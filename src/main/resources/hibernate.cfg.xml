@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:mysql://localhost:3306/depo_project</property>
+    <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+    <property name="connection.username">root</property>
+    <property name="connection.password"></property>
+
+
+    <!-- DB schema will be updated if needed -->
+    <property name="format_sql">false</property>
+    <property name="show_sql">true</property>
+
+    <!-- DB schema will be updated if needed -->
+    <property name="hibernate.hbm2ddl.auto">update</property>
+
+    <!-- Entities Class Add -->
+    <mapping class="entities.Admin"/>
+    <mapping class="entities.Customer"/>
+    <mapping class="entities.Product"/>
+    <mapping class="entities.BoxAction"/>
+    <mapping class="entities.BoxCustomerProduc"/>
+
+    <mapping class="entities.BoxOrders"/>
+    <mapping class="entities.PayOut"/>
+    <mapping class="entities.Receipt"/>
+    <mapping class="entities.CustomerSearch"/>
+
+    <mapping class="entities.ReceiptTotal"/>
+    <mapping class="entities.PayIn"/>
+    <mapping class="entities.PayInTable"/>
+
+
+  </session-factory>
+</hibernate-configuration>
