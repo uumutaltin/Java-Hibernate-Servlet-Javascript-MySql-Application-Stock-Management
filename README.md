@@ -1,6 +1,6 @@
-# Java Servlet Javascript MySql Application Stock Management
+# Java Hibernate Servlet Javascript MySql Application Stock Management
 
-Açıklama
+Kullanıcılar şifre ve mail adresi ile sisteme giriş yapar. Beni hatırla seçeneği mevcuttur. Bütün ekleme, silme, güncelleme ve silme işlemleri Javascript üzerinden ajax ile sağlanmıştır. Ürün miktar kontrolü vardır. Stoklarda bulunan üründen fazla satış yapılamaz. Aynı zamanda satış yapılırken sepete ekle seçeneği mevcuttur. Sipariş tamamla olmadığı sürece sepette ürünler durmaktadır. Otomatik oluşturulan bir fiş numarası üstünden veritabanına toplam miktar yazılır. Kasada müşteri seçilince kişiye ait faturalar gelir ve ödeme tamamlandığında artık listede görünmez.
 
 ## Kullanılan Diller ve Yetenekler
 
